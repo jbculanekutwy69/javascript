@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad16 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad16" id="1" cols="80" rows="80">
+<!DOCTYPE html>
+
+<head>
+    <title>Obliczenia</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div style="color:red;font-size:100px;">
+
+        <script language="JavaScript">
+
+            var Liczba1 = prompt("A=", "");
+
+            var A_rus = parseFloat(Liczba1);
+
+            var Liczba2 = prompt("B=", "");
+
+            var B_rus = parseFloat(Liczba2);
+
+            document.write("A=" + A_rus + " " + "B=" + B_rus + "<br>");
+
+            var wynik = Math.pow(A_rus + B_rus, 3);
+            var wzor1 = Math.pow(A_rus, 3);
+            var wzor2 = 3 * Math.pow(A_rus, 2) * B_rus;
+            var wzor3 = 3 * A_rus * Math.pow(B_rus, 2);
+            var wzor4 = Math.pow(A_rus, 3);
+
+            document.write("(" + A_rus + " + " + B_rus + ")^3 = " + A_rus + "^3 + 3*" + A_rus + "^2*" + B_rus + " + 3*" + A_rus + "*" + B_rus + "^2 + " + B_rus + "^2<br>" + "= " + wzor1 + " + " + wzor2 + " + " + wzor3 + " + " + wzor4 + "<br>" + "= " + wynik);
+
+
+        </script>
+    </div>
+</body>
+
+</textarea>
+</body>
+</html>
