@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadnie 18</title>
+    <script>
+        function suma_rus(a, b) {
+            return a + b;
+        }
+
+        function odejmowanie_rus(a, b) {
+            return a - b;
+        }
+
+        function mnozenie_rus(a, b) {
+            return a * b;
+        }
+
+        function od_kwadratu_rus(a, b) {
+            return [a * a, b * b];
+        }
+
+        function reszta_z_dzielenia_a_przez_b_rus(a, b) {
+            return a % b;
+        }
+
+        function testFunctions() {
+            var a = parseFloat(prompt("a=", ""));
+            var b = parseFloat(prompt("b=", ""));
+            console.log("suma_rus(a, b):", suma_rus(a, b));
+            console.log("odejmowanie_rus(a, b):", odejmowanie_rus(a, b));
+            console.log("mnozenie_rus(a, b):", mnozenie_rus(a, b));
+            console.log("od_kwadratu_rus(a, b):", od_kwadratu_rus(a, b));
+            console.log("reszta_z_dzielenia_a_przez_b_rus(a, b):", reszta_z_dzielenia_a_przez_b_rus(a, b));
+            document.write("suma_rus(a, b): " + suma_rus(a, b) + "<br>");
+            document.write("odejmowanie_rus(a, b): " + odejmowanie_rus(a, b) + "<br>");
+            document.write("mnozenie_rus(a, b): " + mnozenie_rus(a, b) + "<br>");
+            document.write("od_kwadratu_rus(a, b): " + od_kwadratu_rus(a, b) + "<br>");
+            document.write("reszta_z_dzielenia_a_przez_b_rus(a, b): " + reszta_z_dzielenia_a_przez_b_rus(a, b) + "<br>");
+        }
+    </script>
+     <button class="button" onclick="window.location.href='index.html'">wróc</button>
+</head>
+<body onload="testFunctions()">
+   
+</body>
+</html></body>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad20 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad20" id="1" cols="80" rows="80"><!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function AB_rus(xa_rus, ya_rus, xb_rus, yb_rus) {
+            return Math.sqrt(Math.pow(xb_rus - xa_rus, 2) + Math.pow(yb_rus - ya_rus, 2));
+        }
+
+        function BC_rus(xb_rus, yb_rus, xc_rus, yc_rus) {
+            return Math.sqrt(Math.pow(xc_rus - xb_rus, 2) + Math.pow(yc_rus - yb_rus, 2));
+        }
+
+        function AC_rus(xa_rus, ya_rus, xc_rus, yc_rus) {
+            return Math.sqrt(Math.pow(xc_rus - xa_rus, 2) + Math.pow(yc_rus - ya_rus, 2));
+        }
+
+        function kalkulacje() {
+            const xa_rus = parseFloat(document.getElementById('xa_rus').value);
+            const ya_rus = parseFloat(document.getElementById('ya_rus').value);
+            const xb_rus = parseFloat(document.getElementById('xb_rus').value);
+            const yb_rus = parseFloat(document.getElementById('yb_rus').value);
+            const xc_rus = parseFloat(document.getElementById('xc_rus').value);
+            const yc_rus = parseFloat(document.getElementById('yc_rus').value);
+
+            const ab_rus = AB_red(xa_rus, ya_rus, xb_rus, yb_rus);
+            const bc_rus = BC_red(xb_rus, yb_rus, xc_rus, yc_rus);
+            const ac_rus = AC_red(xa_rus, ya_rus, xc_rus, yc_rus);
+
+            document.getElementById('result').innerText = `AB: ${ab_rus.toFixed(2)}, BC: ${bc_rus.toFixed(2)}, AC: ${ac_rus.toFixed(2)}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Oblicz długości boków trójkąta</h1>
+    <form onsubmit="kalkulacje(); return false;">
+        <label for="xa_rus">A(xa_rus):</label>
+        <input type="number" id="xa_rus" step="any" required>
+        <label for="ya_rus">A(ya_rus):</label>
+        <input type="number" id="ya_rus" step="any" required><br>
+        <label for="xb_rus">B(xb_rus):</label>
+        <input type="number" id="xb_rus" step="any" required>
+        <label for="yb_rus">B(yb_rus):</label>
+        <input type="number" id="yb_rus" step="any" required><br>
+        <label for="xc_rus">C(xc_rus):</label>
+        <input type="number" id="xc_rus" step="any" required>
+        <label for="yc_rus">C(yc_rus):</label>
+        <input type="number" id="yc_rus" step="any" required><br>
+        <button type="submit">Oblicz</button>
+    </form>
+    <p id="result"></p>
+    <button class="button" onclick="window.location.href='index.html'">wróc</button>
+</body>
+</html>
+
+</textarea>
+</body>
+</html>

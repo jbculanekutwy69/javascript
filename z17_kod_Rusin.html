@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad17 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad17" id="1" cols="80" rows="80">
+
+    <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <button class="button" onclick="window.location.href='index.html'">Wróć</button>
+
+    <h2>Teoria</h2>
+    
+    <h3>1. Wymień cztery sposoby wyprowadzania danych w JS:</h3>
+    <ul>
+        <li>Za pomocą <code>document.write()</code></li>
+        <li>Przez okno dialogowe <code>alert()</code></li>
+        <li>Wstawianie do pól formularza</li>
+        <li>Wyświetlanie w tabeli</li>
+    </ul>
+    
+    <h3>2. Czym jest funkcja w JS? Omów przy użyciu 4 podpunktów:</h3>
+    <ul>
+        <li>Jest to zbiór instrukcji wykonujących określone zadanie, wywoływanych po podaniu nazwy.</li>
+        <li>Po wywołaniu funkcji, wykonywany jest jej kod.</li>
+        <li>Może przyjmować argumenty, np. <code>suma_kry(a, b)</code>.</li>
+        <li>Może zwracać wartość za pomocą <code>return</code> (choć nie jest to obowiązkowe).</li>
+    </ul>
+    
+    <h3>3. Omów metody getElementsByName, getElementById, getElementByTagName (może być w postaci tabeli):</h3>
+    <table>
+        <tr>
+            <th>Metoda</th>
+            <th>Opis</th>
+        </tr>
+        <tr>
+            <td><code>getElementById("id")</code></td>
+            <td>Pobiera element o określonym <code>id</code>.</td>
+        </tr>
+        <tr>
+            <td><code>getElementsByTagName("znacznik")</code></td>
+            <td>Pobiera wszystkie elementy danego znacznika, np. <code>p</code>, <code>div</code>.</td>
+        </tr>
+        <tr>
+            <td><code>getElementsByName("nazwa")</code></td>
+            <td>Pobiera elementy o podanej wartości atrybutu <code>name</code>.</td>
+        </tr>
+    </table>
+    
+    <h3>4. Omów właściwości innerHTML, innerText, className (każdą osobno):</h3>
+    <ul>
+        <li><strong>innerHTML</strong> – pozwala na odczyt i modyfikację zawartości HTML danego elementu.</li>
+        <li><strong>innerText</strong> – umożliwia zmianę wyświetlanego tekstu w elemencie.</li>
+        <li><strong>className</strong> – pozwala na przypisanie klasy CSS do elementu.</li>
+    </ul>
+    
+    <h2>Przykład</h2>
+    <div id="nazwa"></div>
+    <script>
+        document.getElementById("nazwa").innerHTML = "Witaj";
+        document.getElementById("nazwa").className = "wyroznienieCzerwone";
+    </script>
+</body>
+</html>
+
+</textarea>
+</body>
+</html>
