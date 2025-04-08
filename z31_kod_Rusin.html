@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kod źródłowy</title>
+</head>
+<body>
+    <textarea name="zad20" id="1" cols="80" rows="80">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Obiekt Router</title>
+  <script type="text/javascript">
+    var router = {
+      firma: 'NetCore',
+      model: 'Nova R720',
+      standard_komunikacji: 'WI-FI 6E',
+      porty_sieciowe: '1x port WAN 2.5Gb/s, 4x porty LAN 1Gb/s',
+      funkcje_bezpieczenstwa: 'NetCore Shield',
+      rok_produkcji: 2023,
+      wyswietl_router: function () {
+        document.write('<strong>' + this.firma + ' ' + this.model + '</strong><br>');
+      },
+      wypisz: function () {
+        alert(this.firma + ' ' + this.model + ' został wyprodukowany w ' + this.rok_produkcji + ' roku');
+      }
+    };
+
+    router.wyswietl_router();
+    router.wypisz();
+  </script>
+</head>
+<body>
+  <br>
+  Programowanie obiektowe. <br>
+  Obiekt to router<br>
+  Pola:<br>
+  firma<br>
+  model<br>
+  standard_komunikacji<br>
+  porty_sieciowe<br>
+  funkcje_bezpieczenstwa<br>
+  rok_produkcji<br>
+  metoda: wyswietl_router()<br>
+  metoda: wypisz()<br>
+</body>
+</html>
+    </textarea>
+</body>
+</html>
+

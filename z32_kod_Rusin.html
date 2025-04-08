@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kod źródłowy</title>
+</head>
+<body>
+    <textarea name="zad20" id="1" cols="80" rows="80">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Obiekt Router</title>
+  <script type="text/javascript"> 
+    function Router(firma_t, model_t, standard_komunikacji_t, porty_sieciowe_t, funkcje_bezpieczenstwa_t) {
+      this.firma = firma_t;
+      this.model = model_t;
+      this.standard_komunikacji = standard_komunikacji_t;
+      this.porty_sieciowe = porty_sieciowe_t;
+      this.funkcje_bezpieczenstwa = funkcje_bezpieczenstwa_t;
+    }
+    
+    Router.prototype.wypisz = function() { 
+      alert(this.firma + " " + this.model + ", " + this.standard_komunikacji + ", porty: " + this.porty_sieciowe + ", zabezpieczenia: " + this.funkcje_bezpieczenstwa);
+    };
+    
+    Router.prototype.wyswietl_nazwisko = function() {
+      alert("Rusin");
+    };
+
+    var router1 = new Router("NetCore", "Nova R720", "WI-FI 6E", "1x port WAN 2.5Gb/s, 4x porty LAN 1Gb/s", "NetCore Shield");
+    var router2 = new Router("TP-Link", "Archer AXE75", "WI-FI 6E", "1x WAN, 4x LAN", "HomeShield");
+
+    router1.wypisz();
+    router2.wypisz();
+    router1.wyswietl_nazwisko();
+
+    document.write("Routery<br>");
+    document.write("Router pierwszy: " + router1.firma + " " + router1.model + ", standard: " + router1.standard_komunikacji + ", porty: " + router1.porty_sieciowe);
+  </script> 
+</head> 
+<body> 
+  <br>
+  Programowanie obiektowe
+</body> 
+</html>
+
+    </textarea>
+</body>
+</html>

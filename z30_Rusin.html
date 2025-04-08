@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Obiekt Router</title>
+  <script type="text/javascript">
+    var router = {
+      firma: 'NetCore',
+      model: 'Nova R720',
+      Standard_komunikacji: 'WI-FI 6E',
+      porty_sieciowe: '1x port WAN 2.5Gb/s, 4x porty LAN 1Gb/s',
+      funkcje_bezpieczenstwa: 'NetCore Shield',
+      pokaz: function () {
+        document.write('<strong>' + this.firma + ' ' + this.model + '</strong><br>');
+      }
+    }
+
+    router.pokaz();
+  </script>
+</head>
+<body>
+  <hr>
+  <p><strong>Programowanie obiektowe</strong></p>
+  <p>Obiekt: <code>router</code></p>
+  <p>Pola:</p>
+  <ul>
+    <li>firma</li>
+    <li>model</li>
+    <li>Standard_komunikacji</li>
+    <li>porty_sieciowe</li>
+    <li>funkcje_bezpieczenstwa</li>
+  </ul>
+  <p>Metoda: <code>pokaz</code></p>
+</body>
+</html>
