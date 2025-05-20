@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wybór Koloru</title>
+</head>
+<body>
+
+<h3 style="color:green;">MENU:</h3>
+<p style="color:red;">1- CZERWONY</p>
+<p style="color:blue;">2- NIEBIESKI</p>
+<input type="button" value="Oblicz" onclick="fun_rus()" />
+    
+<script>
+function fun_rus() {
+    var koz = prompt("Podaj kolor lub liczbę (1- czerwony, 2- niebieski):", "");
+    if (koz == 1 || koz.toLowerCase() == "czerwony") {
+        document.write('<h1 style="color:red; font-size: 15;">Wczytałeś kolor czerwony</h1><br />');
+    } else if (koz == 2 || koz.toLowerCase() == "niebieski") {
+        document.write('<h6 style="color:blue; font-size: 15;">Wczytałeś kolor niebieski</h6><br />'); } 
+	else {
+        alert("Niepoprawna wartość, spróbuj ponownie!");
+    }
+   }
+		
+</script>
+</body>
+</html>
